@@ -9,6 +9,7 @@ public class Main {
         Vehicle car   = new Vehicle("12345-A-6", "CAR");
         Vehicle bike  = new Vehicle("67890-B-1", "MOTORBIKE");
         Vehicle truck = new Vehicle("24680-D-8", "TRUCK");
+        Vehicle testTruck=new Vehicle("24680-D-9","TRUCK");
 
         PaymentMethod card = new CardPayment("4242");
         PaymentMethod cash = new CashPayment();
