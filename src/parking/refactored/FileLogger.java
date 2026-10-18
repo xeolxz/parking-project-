@@ -7,7 +7,7 @@ public class FileLogger implements ReceiptLogger{
     private final String fileName;
 
     public FileLogger(String fileName) { this.fileName = fileName; }
-
+    @Override
     public void log(String line) throws IOException {
         try (FileWriter fw = new FileWriter(fileName, true)) {   // append
             fw.write(line + System.lineSeparator());
