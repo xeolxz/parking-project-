@@ -15,7 +15,7 @@ public class Main {
 
         ParkingService garage = new ParkingService(
                 new PaymentService(),
-                new ReportReceiptFormatter(),
+                new TextReportFormatter(),
                 new FileLogger("parking_refactored.log")
         );
 

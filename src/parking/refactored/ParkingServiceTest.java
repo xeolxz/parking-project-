@@ -4,7 +4,7 @@ public class ParkingServiceTest {
     public static void main(String[] args) throws Exception {
         ParkingService service = new ParkingService(
                 new PaymentService(),
-                new ReportReceiptFormatter(),
+                new TextReportFormatter(),
                 new FakeLogger()
         );
 

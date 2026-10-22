@@ -46,11 +46,7 @@ public class ParkingService {
         logger.log(receipt);
     }
 
-    public void cancel(
-            Vehicle vehicle,
-            int hours,
-            RefundablePaymentMethod method,
-            VehicleTariff tariff) throws IOException {
+    public void cancel(Vehicle vehicle, int hours, RefundablePaymentMethod method, VehicleTariff tariff) throws IOException {
 
         double amount = fee(vehicle, hours, tariff);
 
